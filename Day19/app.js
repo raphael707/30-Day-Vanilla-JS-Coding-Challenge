@@ -26,7 +26,6 @@ function paintToCanvas() {
     ctx.drawImage(video, 0, 0, width, height);
     let pixels = ctx.getImageData(0, 0, width, height);
     pixels = rgbSplit(pixels);
-    // put them back
     ctx.putImageData(pixels, 0, 0);
   }, 16);
 }
